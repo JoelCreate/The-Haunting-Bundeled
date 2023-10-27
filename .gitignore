@@ -11,6 +11,7 @@ env.js
 .env
 .parcel-cache
 .cache
+.node_modules
 *.local
 
 # Editor directories and files
