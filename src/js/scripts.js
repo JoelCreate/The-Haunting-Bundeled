@@ -125,7 +125,7 @@ function showRefreshBtn() {
 //AI Enhanced 
 
 const openai = new OpenAI({    
-    apiKey: OPENAI_API_KEY,
+    apiKey: process.env.OPENAI_API_KEY,
     dangerouslyAllowBrowser: true
 })
 
