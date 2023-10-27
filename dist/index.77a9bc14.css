@@ -1,0 +1,464 @@
+@import "https://fonts.googleapis.com/css2?family=Oldenburg&display=swap";
+@font-face {
+  font-family: natsregular;
+  src: url("nats-regular-webfont.60b1f261.woff2") format("woff2"), url("nats-regular-webfont.822d9787.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  color: #fff;
+  background-color: #000;
+  background-size: cover;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: natsregular;
+  display: flex;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: .35em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #0000004d;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #a9a9a9;
+  border-radius: 50px;
+  outline: 1px solid #708090;
+}
+
+.hamburger {
+  z-index: 99999;
+  position: absolute;
+  top: 33px;
+  right: 25px;
+}
+
+.hamburger-inner, .hamburger-inner:before, .hamburger-inner:after, .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
+  background: #fff;
+  width: 30px;
+}
+
+#menu {
+  z-index: 99999;
+  color: #000;
+  text-align: center;
+  background: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  max-width: 90vw;
+  height: 85vh;
+  margin: auto;
+  padding: 65px;
+  font-family: Oldenburg, serif;
+  display: none;
+  position: absolute;
+  inset: 70px 0 0;
+}
+
+#menu p {
+  text-align: justify;
+  margin: 20px auto 40px;
+}
+
+#menu ul {
+  font-size: 2em;
+  list-style: none;
+}
+
+#menu-footer {
+  font-size: 1em;
+  position: absolute;
+  bottom: 5px;
+}
+
+.material-symbols-outlined {
+  vertical-align: bottom;
+}
+
+#logo {
+  color: #fff;
+  text-shadow: .05em 0 #b700ffbf, -.025em -.05em #ffffffbf, .025em .05em #0000ffbf;
+  text-align: center;
+  font-family: Oldenburg, serif;
+  animation: .5s ease-in-out infinite reverse glitch;
+  position: absolute;
+  top: 45px;
+}
+
+#logo h1 {
+  letter-spacing: 2.5px;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: .05em 0 #b700ffbf, -.05em -.05em #ffffffbf, .05em .05em #0000ffbf;
+  }
+
+  25% {
+    text-shadow: -.05em -.05em #b3ff00bf, .05em .05em #ffffffbf, -.05em -.05em #0000ffbf;
+  }
+
+  50% {
+    text-shadow: .05em .05em #b3ff00bf, .05em 0 #ffffffbf, -.05em .05em #0000ffbf;
+  }
+
+  100% {
+    text-shadow: -.05em 0 #b3ff00bf, -.05em -.05em #ffffffbf, -.05em -.05em #0000ffbf;
+  }
+}
+
+#creepy-music {
+  margin: 50px auto;
+}
+
+#volumeOn {
+  display: none;
+}
+
+.volume {
+  font-family: Oldenburg, serif;
+  font-size: .5em;
+}
+
+.static, #particles-js, .haunted-house {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+.static {
+  background: repeating-radial-gradient(#000 0 0.0001%, #fff 0 0.0002%) 50% 0 / 2500px 2500px, repeating-conic-gradient(#000 0 0.0001%, #fff 0 0.0002%) 60% 60% / 2500px 2500px;
+  background-blend-mode: multiply;
+  opacity: .075;
+  animation: .2s infinite alternate tv-static;
+}
+
+@keyframes tv-static {
+  from {
+    background-size: 100% 100%;
+  }
+
+  to {
+    background-size: 200% 200%;
+  }
+}
+
+.haunted-house {
+  filter: grayscale();
+  opacity: .15;
+  background: url("haunted-house.0fd86d4e.jpg") top / cover no-repeat;
+}
+
+#container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  max-width: 90vw;
+  height: auto;
+  padding: 40px;
+  display: flex;
+  position: relative;
+}
+
+#header-intro, #setup-container {
+  letter-spacing: 2.5px;
+  text-align: center;
+  margin: auto;
+  font-size: 4em;
+  display: none;
+  position: absolute;
+  top: 35%;
+  left: 0;
+  right: 0;
+}
+
+#discover, #beware, #past {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+#discover {
+  opacity: 0;
+  animation: 4s ease-in-out fadeIn;
+}
+
+#beware {
+  opacity: 0;
+  animation: 4s ease-in-out 4s forwards fadeIn;
+}
+
+#past {
+  opacity: 0;
+  animation: 4s ease-in-out 8s forwards fadeIn;
+}
+
+#setup-container {
+  opacity: 0;
+  animation: 4s ease-in-out forwards fadeIn;
+}
+
+@keyframes fadeIn {
+  0%, 100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+#alertModal {
+  color: #000;
+  z-index: 99999;
+  background-color: #d6d1c3;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+  width: 90vw;
+  max-width: 600px;
+  height: auto;
+  padding: 20px 20px 60px;
+  font-family: Oldenburg, serif;
+  font-size: 1em;
+  display: none;
+}
+
+#alertModal p {
+  text-align: center;
+  line-height: 1.5;
+}
+
+#close {
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+#look-up {
+  opacity: 0;
+  flex-flow: column wrap;
+  align-items: center;
+  animation: 3s ease-in-out forwards fadeInStay;
+  display: none;
+  position: absolute;
+}
+
+#look-up h1 {
+  letter-spacing: 3px;
+  text-align: center;
+  font-family: natsregular;
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+input::placeholder, input, select {
+  color: #000;
+  font-family: Oldenburg, serif;
+}
+
+option {
+  font-family: Oldenburg, serif;
+}
+
+#form-inputs {
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 50px;
+  display: flex;
+}
+
+.option {
+  color: #000;
+  background: #ffffff80;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  width: 200px;
+  max-width: 200px;
+  height: auto;
+  padding: 10px 20px;
+}
+
+.option:focus {
+  outline: none;
+}
+
+input, option, .btn {
+  height: 40px;
+}
+
+.btn {
+  color: #000;
+  background: #ffffff80;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px 25px;
+  font-family: natsregular;
+  line-height: 0;
+  display: flex;
+}
+
+.btn, .story-text, .story {
+  font-size: 1.5em;
+}
+
+.btn:hover, #alertModal:hover {
+  cursor: pointer;
+}
+
+.random-btn, .donate-btn {
+  color: #fff;
+  background: #000;
+  border: 2px solid #3a3a3a;
+  margin: 10px auto;
+}
+
+#story-container {
+  opacity: 0;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  padding: 10px 20px;
+  animation: 3s ease-in-out forwards fadeInStay;
+  display: none;
+  position: absolute;
+  top: 200px;
+}
+
+.btnGlow {
+  animation: 2s ease-in-out infinite pulse;
+  box-shadow: 0 0 5px #eefc9d;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+#refresh-btn {
+  z-index: 99999;
+  width: 200px;
+  margin: 20px auto 40px;
+  font-size: 1.5em;
+  animation: 3s ease-in-out forwards fadeInStay;
+  display: none;
+}
+
+#AI-enhanced-story {
+  text-align: left;
+  margin-bottom: 50px;
+  animation: 3s ease-in-out forwards fadeInStay;
+}
+
+@keyframes fadeInStay {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#rendered-story p {
+  display: inline-block;
+}
+
+#haunted-title {
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  font-family: Oldenburg, serif;
+  font-size: 2em;
+  line-height: 65px;
+}
+
+#the-story {
+  display: none !important;
+}
+
+.story-label {
+  text-transform: uppercase;
+  margin: 10px 10px 30px 0;
+  font-size: 1.5em;
+}
+
+.story-text {
+  font-size: 1em;
+}
+
+.story {
+  letter-spacing: .75px;
+  line-height: 28px;
+}
+
+@media (width <= 480px) {
+  #look-up h1 {
+    font-size: 1.5em;
+  }
+
+  #logo {
+    top: 60px;
+  }
+
+  .hamburger {
+    top: 10px;
+    right: 5px;
+  }
+
+  #menu {
+    padding: 10px 20px;
+  }
+
+  #header-intro, #setup-container {
+    line-height: 1;
+    top: 40%;
+  }
+
+  #haunted-story {
+    padding: 10px 25px;
+  }
+}
+
+/*# sourceMappingURL=index.77a9bc14.css.map */

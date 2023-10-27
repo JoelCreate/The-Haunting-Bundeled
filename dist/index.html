@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Haunting</title>
+    <link rel="icon" href="/favicon.df2340ab.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link href="/index.175ffad3.css" rel="stylesheet">    
+    <link rel="stylesheet" href="/index.77a9bc14.css">
+</head>
+<body> 
+    <div id="logo"> 
+        <h1>THE HAUNTING</h1><br>
+        <p> Eerily True Haunted Stories</p>
+    </div> 
+
+    <div id="particles-js"></div> 
+    <div class="static"></div>
+    <div class="haunted-house"></div>  
+    
+    <button class="hamburger hamburger--squeeze" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+    </button> 
+    
+    <div id="menu">
+        <div>      
+            <h2>About</h2>
+            <p>This website is dedicated to haunted places,
+                featuring real data and submissions from real individuals who've
+                heard stories in their home towns or actually encountered the supernatural.
+                Using the capabilities of AI, all stories are polished,
+                ensuring flawless grammar and presentation. The result is a chilling 
+                collection of eerie tales and haunted locations.
+                Dive into the world of the supernatural,
+                where real encounters meet AI-enhanced storytelling
+                for a spine-tingling experience.</p>
+            <a href="https://www.paypal.com/donate/?business=G59R7SVWQGJTS&no_recurring=1&item_name=Thank+you+for+supporting+my+coding+journey.+Your+donation+is+greatly+appreciated%21&currency_code=USD" target="_blank">
+                <input type="submit" value="Donate" class="btn donate-btn" id="donate-btn">
+            </a>
+
+            <div id="creepy-music">Add creepy music!<br><br>
+                <span class="material-symbols-outlined" id="volumeOn">volume_up<br><span class="volume">Volume On</span></span>
+                <span class="material-symbols-outlined" id="volumeOff">volume_off<br><span class="volume">Volume Off</span></span>
+            </div> 
+     
+        </div>
+        <p id="menu-footer">Coded with
+            <span class="material-symbols-outlined">sentiment_very_dissatisfied</span> 
+            by <a href="https://joelcodes.co" target="_blank">Joel Wiesner</a>        
+        </p>
+    </div>
+
+    <div id="container"> 
+        <div id="alertModal" class="modal">                
+            <div class="modal-content">
+                <span id="close" class="material-symbols-outlined">close</span>
+                <p>Please select a specific state you would like to search.</p><br>
+                <p>Or choose "random" ... if you dare!</p>                
+            </div>            
+        </div>
+
+        <div id="header-intro" class="">
+            <span id="discover">DISCOVER HAUNTED PLACES</span>
+            <span id="beware">BUT BEWARE</span>
+            <span id="past">THE PAST IS NEVER DEAD</span>
+        </div>  
+
+        <div id="setup-container" class="toggle-elements">YOU'VE BEEN WARNED...</div>
+    
+        <form id="look-up" class="toggle-elements">
+            <h1>DISCOVER HAUNTED PLACES</h1>            
+
+            <div id="form-inputs">
+                <select class="option" id="select-state">
+                    <option disabled="" selected="" value="">Select a state</option>
+                    <option>Alabama</option>
+                    <option>Alaska</option>
+                    <option>Arizona</option>
+                    <option>Arkansas</option>
+                    <option>California</option>
+                    <option>Colorado</option>
+                    <option>Connecticut</option>
+                    <option>Delaware</option>
+                    <option>Florida</option>
+                    <option>Georgia</option>
+                    <option>Hawaii</option>
+                    <option>Idaho</option>
+                    <option>Illinois</option>
+                    <option>Indiana</option>
+                    <option>Iowa</option>
+                    <option>Kansas</option>
+                    <option>Kentucky</option>
+                    <option>Louisiana</option>
+                    <option>Maine</option>
+                    <option>Maryland</option>
+                    <option>Massachusetts</option>
+                    <option>Michigan</option>
+                    <option>Minnesota</option>
+                    <option>Mississippi</option>
+                    <option>Missouri</option>
+                    <option>Montana</option>
+                    <option>Nebraska</option>
+                    <option>Nevada</option>
+                    <option>New Hampshire</option>
+                    <option>New Jersey</option>
+                    <option>New Mexico</option>
+                    <option>New York</option>
+                    <option>North Carolina</option>
+                    <option>North Dakota</option>
+                    <option>Ohio</option>
+                    <option>Oklahoma</option>
+                    <option>Oregon</option>
+                    <option>Pennsylvania</option>
+                    <option>Rhode Island</option>
+                    <option>South Carolina</option>
+                    <option>South Dakota</option>
+                    <option>Tennessee</option>
+                    <option>Texas</option>
+                    <option>Utah</option>
+                    <option>Vermont</option>
+                    <option>Virginia</option>
+                    <option>Washington</option>
+                    <option>West Virginia</option>
+                    <option>Wisconsin</option>
+                    <option>Wyoming</option>                    
+                </select>
+                <input type="submit" value="Search" class="btn" id="search-btn">
+            </div>          
+                <input type="submit" value="Random, If You Dare..." class="btn random-btn" id="random-btn">
+        </form>
+        <div id="story-container" class="toggle-elements">
+            <div id="ai-elements"></div>
+            <button class="btn" id="refresh-btn">Refresh</button>
+        </div>
+        
+        <audio id="audio" autoplay="" loop="">
+            <source src="/music.1ea2dc52.mp3" type="audio/mp3">             
+        </audio>
+    </div>
+
+    <!-- <script src="../src/js/particles.min.js"></script>  -->
+    <script src="/index.64a4978e.js" defer=""></script>    
+</body>
+</html> 

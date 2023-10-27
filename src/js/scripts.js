@@ -1,4 +1,4 @@
-import _ from 'lodash'
+
 import { hauntedPlaces } from './hauntedPlaces.js'
 //import { process } from './env.js'
 import OpenAI from 'openai'
@@ -36,7 +36,7 @@ modal.addEventListener("click", function() {
 
 const elements = document.querySelectorAll(".toggle-elements")
 
-particlesJS.load('particles-js', 'assets/particlesjs-config.json')
+//particlesJS.load('particles-js', 'particlesjs-config.json')
 
 function playIntro() {
     const intro = document.getElementById("header-intro")

@@ -9,6 +9,8 @@ lerna-debug.log*
 
 env.js
 .env
+.parcel-cache
+.cache
 *.local
 
 # Editor directories and files
