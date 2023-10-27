@@ -1,0 +1,23 @@
+{
+  "name": "the-haunting-v1",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "node": "^21.0.0",
+    "openai": "^4.13.0"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "lodash": "^4.17.21",
+    "parcel": "^2.10.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
