@@ -12,7 +12,6 @@
     "node": "^21.0.0",
     "openai": "^4.13.0"
   },
-  "main": "index.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
