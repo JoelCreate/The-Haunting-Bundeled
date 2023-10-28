@@ -170,7 +170,10 @@ border-radius: 50px;
 
 .static {
     position: fixed;
-    top: -250px;
+    top: -300px;
+    left:0;
+    right: 0;
+    bottom: 0;
     width: 1500%;
     height: 1500%;
     background: transparent url('/src/assets/img/static.png') 0 0 repeat; 
@@ -429,7 +432,7 @@ input, option, .btn {
 }
 
 #AI-enhanced-story {
-    text-align: center;
+    text-align: left;
     margin-bottom: 50px;
     animation: fadeInStay 3s ease-in-out 0s forwards; 
 } 
