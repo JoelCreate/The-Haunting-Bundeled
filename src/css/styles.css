@@ -476,6 +476,8 @@ input, option, .btn {
 
     #menu{
         padding: 10px 20px;
+        height: 100%;
+        margin: 50px auto;
     }
     #header-intro, #setup-container {
         line-height: 1;
