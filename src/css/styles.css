@@ -170,12 +170,12 @@ border-radius: 50px;
 
 .static {
     position: fixed;
-    top: -100px;
+    top: -250px;
     width: 1500%;
     height: 1500%;
     background: transparent url('/src/assets/img/static.png') 0 0 repeat; 
     background-blend-mode: multiply;
-    opacity: 0.175;
+    opacity: 0.15;
     animation: tv-static 1s steps(8,end) infinite both;
 } 
 
