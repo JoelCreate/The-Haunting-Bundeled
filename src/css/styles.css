@@ -178,7 +178,13 @@ border-radius: 50px;
 } 
 
 @keyframes tv-static {
-    100% {background-position: 50% 0, 60% 50%}
+    from {
+      background-size: 100vw 100%vh;
+    }
+  
+    to {
+      background-size: 200vw 200vh;
+    }
 }
 
 .haunted-house {  
