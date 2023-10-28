@@ -155,6 +155,7 @@ border-radius: 50px;
     margin: 50px auto;
     display: flex;
     justify-content: center;
+    gap: 15px;
 }
 
 #volumeOn {
@@ -168,9 +169,6 @@ border-radius: 50px;
 }
 
 .static {
-    /* background-image: repeating-radial-gradient(circle at 17% 32%, white, black 0.00085px);
-    animation: tv-static 5s linear infinite;
-    opacity: 0.1; */
     background: 
     repeating-radial-gradient(#000 0 0.0001%,#fff 0 0.0002%) 50% 0/2500px 2500px,
     repeating-conic-gradient(#000 0 0.0001%,#fff 0 0.0002%) 60% 60%/2500px 2500px;
@@ -180,13 +178,7 @@ border-radius: 50px;
 } 
 
 @keyframes tv-static {
-    from {
-      background-size: 100% 100%;
-    }
-  
-    to {
-      background-size: 200% 200%;
-    }
+    100% {background-position: 50% 0, 60% 50%}
 }
 
 .haunted-house {  
