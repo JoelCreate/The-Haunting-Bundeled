@@ -153,15 +153,12 @@ border-radius: 50px;
 
 #creepy-music{    
     margin: 50px auto;
+    display: flex;
+    justify-content: center;
 }
 
 #volumeOn {
     display: none;
-}
-
-.volume {
-    font-family: 'Oldenburg', serif;
-    font-size: .5em;
 }
 
 .static, #particles-js, .haunted-house {
