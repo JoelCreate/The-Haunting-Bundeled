@@ -179,7 +179,7 @@ border-radius: 50px;
 
 @keyframes tv-static {
     from {
-      background-size: 100vw 100%vh;
+      background-size: 100vw 100vh;
     }
   
     to {
