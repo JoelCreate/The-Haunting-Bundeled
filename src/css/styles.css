@@ -171,20 +171,14 @@ border-radius: 50px;
 .static {
     background: 
     repeating-radial-gradient(#000 0 0.0001%,#fff 0 0.0002%) 50% 0/2500px 2500px,
-    repeating-conic-gradient(#000 0 0.0001%,#fff 0 0.0002%) 60% 60%/2500px 2500px;
+    repeating-conic-gradient(#000 0 0.0001%,#fff 0 0.0002%) 60% 60%/2500px 2500px; 
     background-blend-mode: multiply;
     opacity: 0.075;
     animation: tv-static .2s infinite alternate;
 } 
 
 @keyframes tv-static {
-    from {
-      background-size: 100vw 100vh;
-    }
-  
-    to {
-      background-size: 200vw 200vh;
-    }
+    100% {background-position: 50% 0, 60% 50%};
 }
 
 .haunted-house {  
